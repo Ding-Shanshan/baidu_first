@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>百度前端训练营</title>
+    </head>
+    <body>
+        <header class="baiduheader">
+            <div class="topmenu">
+                <div class="logo">
+                    <img src="./image/baidulogo.png" alt="baidu_logo">
+                </div>
+                <nav>
+                    <ul class="topmenuul">
+                        <li><a href="#">开发文档</a></li>
+                        <li><a href="#">交流中心</a></li>
+                        <li><a href="#">服务市场</a></li>
+                        <li><a href="#">开源联盟</a></li>
+                        <li><button class="manbtn">管理中心</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bannerborder">
+                <div class="banner">
+                    <div class="titletext">百度前端训练营2021开营了，赶紧报名吧！</div>
+                </div>
+           </div>
+        </header>
+        <main>
+            <article>
+                <div class="selfinfo">
+                    <div class="infopop" id="infopop">
+                        <div class="school sinfo">
+                            <div class="infotext">
+                                选择您的学校
+                            </div>
+                            <input type="text" id="schoolinfo">
+                        </div>
+                        <div class="years sinfo">
+                            <div class="infotext">
+                                选择您入学年份
+                            </div>
+                            <input type="text"  id="yearsinfo" class="yearsinfo">
+                        
+                        </div>
+                        <div class="email sinfo">
+                            <div class="infotext">
+                                输入您的电子邮箱
+                            </div>
+                            <input id="emailiput">
+                        </div>
+                        <div class="signup sinfo" id="signup">
+                            <button id="signbtn">报名</button>
+                        </div>
+                    </div>
+                    <div class="selectschool" id="selectschool">
+                        <div class="selectschool1" id="selectschool1">
+                            <div class="schoolleft" id="schoolleft">
+                                <ul id="schoolleftul">
+                                    <li class="current" data-n="city1">北京市</li>
+                                    <li data-n="city2">天津市</li>
+                                    <li data-n="city3">上海市</li>
+                                    <li data-n="city4">重庆市</li>
+                                    <li data-n="city5">河南省</li>
+                                    <li data-n="city6">河北省</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist currentschool" data-n="city1">
+                                <ul id="currentschoolul">
+                                    <li class="">北京大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XXX大学</li>
+                                    <li class="">北京XXXX大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XXXXX大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XXXX大学</li>
+                                    <li class="">北京XX大学</li>
+                                    <li class="">北京XXX大学</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist" data-n="city2" >
+                                <ul id="currentschoolul">
+                                    <li class="">天津大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XXX大学</li>
+                                    <li class="">天津XXXX大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XXXXX大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XXXX大学</li>
+                                    <li class="">天津XX大学</li>
+                                    <li class="">天津XXX大学</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist" data-n="city3" >
+                                <ul id="currentschoolul">
+                                    <li class="">上海大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XXX大学</li>
+                                    <li class="">上海XXXX大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XXXXX大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XXXX大学</li>
+                                    <li class="">上海XX大学</li>
+                                    <li class="">上海XXX大学</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist" data-n="city4">
+                                <ul id="currentschoolul">
+                                    <li class="">重庆大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XXX大学</li>
+                                    <li class="">重庆XXXX大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XXXXX大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XXXX大学</li>
+                                    <li class="">重庆XX大学</li>
+                                    <li class="">重庆XXX大学</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist" data-n="city5">
+                                <ul id="currentschoolul">
+                                    <li class="">河南大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XXX大学</li>
+                                    <li class="">河南XXXX大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XXXXX大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XXXX大学</li>
+                                    <li class="">河南XX大学</li>
+                                    <li class="">河南XXX大学</li>
+                                </ul>
+                            </div>
+                            <div class="schoollist" data-n="city6">
+                                <ul id="currentschoolul">
+                                    <li class="current">河北大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XXX大学</li>
+                                    <li class="">河北XXXX大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XXXXX大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XXXX大学</li>
+                                    <li class="">河北XX大学</li>
+                                    <li class="">河北XXX大学</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="selectyears" id="selectyears">
+                        <div class="selectyears1" id="selectyears1">
+        
+                            <div class="selectyears1buttom" id="selectyears1buttom">
+                                <ul id="selectyearsul">
+                                    <li value="2010">2010</li>
+                                    <li value="2011">2011</li>
+                                    <li value="2012">2012</li>
+                                    <li value="2013">2013</li>
+                                    <li value="2014">2014</li>
+                                    <li value="2015">2015</li>
+                                    <li value="2016">2016</li>
+                                    <li value="2017">2017</li>
+                                    <li value="2018">2018</li>
+                                    <li value="2019">2019</li>
+                                    <li value="2020">2020</li>
+                                    <li value="2021">2021</li>
+                                </ul>   
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="sucpop" id="sucpop">
+                        您已完成报名，开始您的学习之旅吧！
+                        <div class="againsign" id="againsign">重新报名</div>
+                    </div>
+                    <div class="warnpop" id="warnpop">
+                        邮箱地址不符合要求（youxiang@host.com）,请重新输入
+                    </div>
+                    <div class="sucinfo" id="sucinfo">
+                    
+                    </div>
+                </div>
+                <script src="./js/signup.js">
+
+                </script>
+                <div class="center">
+                    <div class="center-warp" id="centerwarp">
+                        <!-- 我们的宗旨 -->
+                        <section class="wmdzz">
+                            <h2>我们的宗旨</h2>
+                            <div class="wmdzzimg">
+                                <figure>
+                                    <figcaption>自律独立思考</figcaption>
+                                    <img src="./image/wmdzz1.png" alt="自律独立思考">
+                                </figure>
+                                <figure>
+                                    <figcaption>实践</figcaption>
+                                    <img src="./image/wmdzz2.png" alt="实践">
+                                </figure>
+                                <figure>
+                                    <figcaption>总结回顾</figcaption>
+                                    <img src="./image/wmdzz3.png" alt="总结回顾">
+                                </figure>
+                                <figure>
+                                    <figcaption>分享交流</figcaption>
+                                    <img src="./image/wmdzz4.png" alt="分享交流">
+                                </figure>
+                            </div>
+                        </section>
+                        <!-- 课程安排 -->
+                        <section class="kcap" id="kcap">
+                            <div class="kcaptitle"><h2>课程安排</h2></div>
+                            <div class="classmenu"> 
+                                <nav>
+                                    <ul id="classmenuul">
+                                        <li class="current" data-n="cAll">
+                                            全部
+                                        </li>
+                                        <li data-n="cHTML">
+                                            HTML
+                                        </li>
+                                        <li data-n="cCSS">
+                                            CSS
+                                        </li>
+                                        <li data-n="cJavaScript">
+                                            JavaScript
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="kcaptext" id="kcaptext">
+                            <ul id="textul">
+                                <li data-n="cHTML">
+                                    <img src="./image/wmdzz1.png" alt="HTML">
+                                    <div class="classtext">
+                                        <dl>
+                                            <dt>
+                                                第一课 这里是课程名字
+                                            </dt>
+                                            <dd>
+                                                今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                            </dd>
+                                        </dl>
+                                        <div class="classlable">
+                                            <div class="lable1">HTML</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-n="cCSS">
+                                    <img src="./image/wmdzz1.png" alt="CSS">
+                                    <div class="classtext">
+                                        <dl>
+                                            <dt>
+                                                第二课 这里是课程名字
+                                            </dt>
+                                            <dd>
+                                            今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                            </dd>
+                                        </dl>
+                                        <div class="classlable">
+                                            <div class="lable2">CSS</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-n="cCSS">
+                                    <img src="./image/wmdzz1.png" alt="CSS">
+                                    <div class="classtext">
+                                        <dl>
+                                            <dt>
+                                                第三课 这里是课程名字
+                                            </dt>
+                                            <dd>
+                                            今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                            </dd>
+                                        </dl>
+                                        <div class="classlable">
+                                            <div class="lable2">CSS</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-n="cJavaScript">
+                                    <img src="./image/wmdzz1.png" alt="JavaScript">
+                                <div class="classtext">
+                                    <dl>
+                                        <dt>
+                                            第四课 这里是课程名字
+                                        </dt>
+                                        <dd>
+                                        今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                        </dd>
+                                    </dl>
+                                    <div class="classlable">
+                                        <div class="lable3">JavaScript</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li data-n="cJavaScript">
+                                    <img src="./image/wmdzz1.png" alt="JavaScript">
+                                <div class="classtext">
+                                    <dl>
+                                        <dt>
+                                            第五课 这里是课程名字
+                                        </dt>
+                                        <dd>
+                                        今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                        </dd>
+                                    </dl>
+                                    <div class="classlable">
+                                        <div class="lable3">JavaScript</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li data-n="cJavaScript">
+                                    <img src="./image/wmdzz1.png" alt="JavaScript">
+                                <div class="classtext">
+                                    <dl>
+                                        <dt>
+                                            第六课 这里是课程名字
+                                        </dt>
+                                        <dd>
+                                        今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                        </dd>
+                                    </dl>
+                                    <div class="classlable">
+                                        <div class="lable3">JavaScript</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li data-n="cHTML cCSS cJavaScript">
+                                    <img src="./image/wmdzz1.png" alt="HTML CSS JavaScript">
+                                    <div class="classtext">
+                                        <dl>
+                                            <dt>
+                                                第七课 这里是课程名字
+                                            </dt>
+                                            <dd>
+                                            今天我们正式进入 HTML 世界，今天您将学会制作一个最简单的 HTML 页面。我们希望你能够通过简单的实践，更加清楚地了解 HTML 是什么，HTML5 是什么，掌握 HTML 文档结构以及 HTML 标签和属性。
+                                            </dd>
+                                        </dl>
+                                        <div class="classlable">
+                                            <div class="lable1">HTML</div>
+                                            <div class="lable2">CSS</div>
+                                            <div class="lable3">JavaScript</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            </div>
+                        </section>
+                        <script src="./js/selectclass.js"></script>
+                    </div>
+                </div>
+            </article>
+        </main>
+    <footer class="baidubottom">
+            <div class="bottomcenter">
+            <div class="bottomleft">
+                <ul>
+                    <li>I</li>
+                    <li>F</li>
+                    <li>E</li>
+                </ul>
+            </div>
+            <div class="bottomright">
+                <div class="right1">
+                    <div class="right1title">Links</div>
+                    <div class="right1text">
+                        <ul>
+                            <li>
+                                百度技术培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                            <li>
+                                百度技术
+                            </li>
+                            <li>
+                                百度培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="right1title">Links</div>
+                    <div class="right1text">
+                        <ul>
+                            <li>
+                                百度技术培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                            <li>
+                                百度技术
+                            </li>
+                            <li>
+                                百度培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="right1title">Links</div>
+                    <div class="right1text">
+                        <ul>
+                            <li>
+                                百度技术培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                            <li>
+                                百度技术
+                            </li>
+                            <li>
+                                百度培训中心
+                            </li>
+                            <li>
+                                百度技术中心
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

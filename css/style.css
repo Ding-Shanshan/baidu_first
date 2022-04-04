@@ -1,0 +1,701 @@
+body{
+    padding:0px;
+    margin: 0px;
+}
+.baiduheader{
+    width:100%;
+    height:420px;
+    min-width:1152px; 
+    position:relative;
+    float: left;
+}
+.topmenu{
+    position: absolute;
+    width:100%;
+    height:63px;
+    background-color:rgba(102, 101, 101, 0.6);
+    z-index: 999;
+}
+.bannerborder{
+    min-width:1152px; 
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.banner{
+    min-width:1152px; 
+    width:100%;
+    height:100%;
+    background-image: url('../image/baidu.png');
+    background-size: 100% 100%;
+    position: relative;
+    transition: all .6s ease;
+
+}
+.banner:hover{
+    transform: scale(1.15);
+}
+.banner .titletext{
+    position: absolute;
+    width:100%;
+    height:80px;
+    text-align: center;
+    top:50%;
+    font-size:50px;
+    color:rgb(255, 255, 255);
+}
+.baiduheader .topmenu .logo{
+    float: left;
+}
+.baiduheader .topmenu .logo img{
+    width:130px;
+    margin-top: -15px;
+    margin-left: 50px;
+    vertical-align: middle;    
+}
+.baiduheader .topmenu nav{
+    float: right;
+}
+.baiduheader .topmenu nav .topmenuul
+{
+    width:700px;
+    margin-top: 0;
+    height:65px;
+}
+.baiduheader .topmenu nav .topmenuul li{
+   list-style: none;
+   float: left;
+   width:100px;
+   font-size:18px;
+   margin-right:40px;
+   color:rgb(255, 255, 255);
+   padding-top:18px;
+   padding-bottom: 18px;
+   /* line-height: 60px; */
+   text-align: center;
+
+   border-bottom: 3px solid rgb(255, 255, 255,0);
+}
+.baiduheader .topmenu nav .topmenuul li a
+{
+    color:rgb(255, 255, 255);
+    font-size:18px;
+    text-decoration: none;
+}
+.baiduheader .topmenu nav .topmenuul li a:active{
+    font-weight: bold;
+}
+.baiduheader .topmenu nav .topmenuul li button{
+    width:90px;
+    height:36px;
+    background-color:#ffffff60;
+    border:0px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: -5px;
+    /* transition: background-color .4s ease; */
+
+}
+.baiduheader .topmenu nav .topmenuul li:hover 
+{
+    border-bottom: 3px solid white;
+    transition: all .6s ease;
+    cursor: pointer;
+    color:#ffffff
+}
+.baiduheader .topmenu nav .topmenuul li:last-child:hover{
+ border-bottom: 3px;   
+
+}
+.baiduheader .topmenu nav .topmenuul li:last-child:hover .manbtn
+{
+    background-color: #f7f7f734;
+    border-bottom: 0px;
+    color: white;
+    transition: all .5s ease;
+}
+
+/* 信息弹框 */
+.selfinfo{
+    width: 100%;
+    height:100px;
+    /* border: 1px solid black; */
+    float: left;
+    position: relative;
+}
+.selfinfo .selectyears{
+    position: absolute;
+    height:200px;
+    /* background-color: #005757; */
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    z-index:99999;
+    top:41px;
+    display: none;
+}
+.selfinfo .selectyears1{
+    width: 200px;
+    height: 200px;
+    /* background-color: #005757; */
+    margin-left:200px;
+}
+.selfinfo .selectschool{
+    position: absolute;
+    height:220px;
+    /* background-color: #005757; */
+    margin-top:-3px;
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    z-index:99999;
+    top:40px;
+    display: block;
+}
+.selfinfo .selectschool1{
+    position: relative;
+    height:220px;
+    /* background-color: #005757; */
+    /* border: 1px solid salmon; */
+    width:390px;
+    /* margin-top: -3px; */
+    margin-left: 25px;  
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 8px 7px 0 rgb(117, 117, 117,0.3);
+    border-radius: 0 0 8px 8px;
+}
+.selfinfo .selectschool .schoolleft{
+    position: absolute;
+    background-color: #ffffff;
+    border-right: 1px solid #eeeeee;
+    border-radius: 0 0 0 8px;
+    width:90px;
+    height:220px;
+    top:0;
+    left:0px;
+    display: block;
+    /* display: none; */
+}
+.selfinfo .selectschool .schoolleft ul{
+    list-style: none;
+    margin-top:15px;
+    padding-left: 20px;
+}
+.selfinfo .selectschool .schoolleft ul li.current{
+    font-weight: bold;
+    color: #202020;
+}
+.selfinfo .selectschool .schoolleft ul li{
+    line-height: 32px;
+    color: #7d7d7d;
+    cursor: pointer;
+    font-size: 14px;
+}
+.selfinfo .selectschool .schoollist{
+    position: absolute;
+    width:300px;
+    height:220px;
+    top:0px;
+    background-color: #ffffff;
+    left:91px;
+    display: none;
+    border-radius: 0 0 8px 0px;
+    color:rgb(224, 224, 224);
+}
+.selfinfo .selectschool .currentschool{
+    display: block;
+}
+.selfinfo .selectschool .schoollist ul{
+    list-style: none;
+    padding: 0;
+}
+.selfinfo .selectschool .schoollist ul li{
+    width:150px;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    line-height: 32px;
+    float: left;
+    color: #7d7d7d;
+    cursor: pointer;
+}
+.selfinfo .selectschool .schoollist ul li:hover{
+    color: #383838;
+}
+.selfinfo .selectschool .schoollist ul li.current{
+    font-weight: bold;
+    color: #323232;
+}
+
+.selfinfo .selectyears1 .selectyears1buttom{
+    width:250px;
+    height:95px;
+    background-color: #ffffff;
+    padding:10px;
+    display: none;
+    box-shadow: 0 8px 6px 0 rgb(117, 117, 117,0.3);
+    border-radius: 0 0 8px 8px;
+}
+.selfinfo .selectyears1 .selectyears1buttom ul{
+    margin:0;
+    padding: 0;
+    padding-left: 20px;
+}
+.selfinfo .selectyears1 .selectyears1buttom ul li{
+    list-style: none;
+     color: #7d7d7d;
+    float:left;
+    line-height: 30px;
+    width: 35px;
+    font-size: 14px;
+    margin-left:25px;
+    text-align: center;
+    cursor: pointer;
+}
+.selfinfo .selectyears1 .selectyears1buttom ul li:hover{
+    color: #404040;
+}
+.selfinfo .selectyears1 .selectyears1buttom ul li:nth-child(4n+1){
+    margin-left: 0;
+}
+.selfinfo .selectyears1 .selectyears1buttom ul li.current{
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.infopop{
+    width:740px;
+    height:120px;
+    box-shadow: 0 2px 10px 3px rgba(117, 117, 117, 0.527);
+    border-radius: 10px;
+    position:absolute;
+    left:50%;
+    margin-left:-350px;
+    top:-50px;
+    background-color: rgb(248, 246, 246);
+    z-index: 9999;
+    /* display: none; */
+}
+.sucpop{
+    position: relative;
+    width:740px;
+    height:40px;
+    box-shadow: 0 2px 10px 3px rgba(117, 117, 117, 0.527);
+    border-radius: 10px;
+    position:absolute;
+    left:50%;
+    margin-left:-350px;
+    top:-50px;
+    background-color: rgb(248, 246, 246);
+    z-index: 9999;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 0px;
+    /* box-sizing: border-box; */
+    display: none;
+}
+.sucpop .againsign
+{
+    position: absolute;
+    width:56px;
+    height:18px;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    /* background-color: #005757; */
+    right:15px;
+    bottom:8px;
+    font-size:14px;
+    color:rgb(137, 137, 137);
+}
+.sucpop .againsign:hover
+{
+    color:rgb(110, 110, 110);
+    border-bottom: 1px solid rgb(130, 130, 130);
+    cursor: pointer;
+    /* background-color: #005757; */ 
+}
+.sinfo{
+    height: 100px;
+    float: left;
+    margin-left:25px;
+    box-sizing: border-box;
+    padding:22px 0;
+    font-size: 13px;
+}
+.sinfo input{
+    width:100%;
+    height:40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0;
+    background-color:	#E0E0E0;
+    font-size: 14px;
+    /* 取消聚焦时的外线 */
+    outline: none;   
+    text-align: center;
+    transition: background .4s ease;
+}
+.sinfo input:hover{
+    background-color: white;
+}
+
+
+
+.sinfo button{
+    width:120px;
+    height:40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    background-color:#2894FF;
+    cursor: pointer;
+}
+.sinfo button:hover{
+    background-color: #0080ff;
+}
+.infopop .school{
+    width:150px;
+    cursor: pointer;
+}
+.infopop .years{
+    width:95px;
+    cursor: pointer;
+}
+
+.infopop .email{
+    width:200px;
+}
+.infopop .signup{
+    width:120px; 
+}
+.warnpop{
+    width: 740px;
+    height:30px;
+    background-color: #fa8676;
+    position: absolute;
+    left: 50%;
+    margin-left:-350px;
+    top:83px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top:8px;
+    font-size: 14px;
+    display: none;
+}
+.sucinfo{
+    width: 740px;
+    height:30px;
+    background-color: 	#BBFFBB;
+    position: absolute;
+    left: 50%;
+    margin-left:-350px;
+    top:45px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top:8px;
+    font-size: 14px;
+    display: none;
+}
+
+/* 我们的宗旨+课程安排 */
+.center{
+    width:100%;
+    float: left;
+}
+.center-warp{
+    width:1000px;
+    /* border: 1px solid rgb(216, 33, 33); */
+    height:1060px;
+    margin:0 auto;
+    transition: height .4s ease;
+
+}
+.center-warp .wmdzz{
+    width:100%;
+    height:300px;
+    /* border: 1px solid black; */
+    margin-top:0px;
+    float: left;
+}
+.center-warp .wmdzz .wmdzzimg{
+    width:100%;
+    height:250px;
+}
+.center-warp .wmdzz .wmdzzimg img:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgb(117, 117, 117);
+    transition: all .4s ease;
+}
+.center-warp .wmdzz h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.center-warp .wmdzz .wmdzzimg figure{
+    width:235px;
+    height:220px;
+    float: left;
+    /* border: 1px solid black; */
+    margin:0px;
+    margin-right:20px;
+}
+.center-warp .wmdzz .wmdzzimg figcaption{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left:3px;
+}
+.center-warp .wmdzz .wmdzzimg figure:last-child{
+    margin-right: 0px;
+}
+.center-warp .wmdzz .wmdzzimg figure img{
+    width: 233px;
+    height:180px
+}
+.center-warp .kcap{
+    width:100%;
+    height:1150px;
+    /* border:1px solid black; */
+    float: left;
+    transition: height .4s ease;
+}
+.center-warp .kcap .kcaptitle{
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+    float: left;
+}
+.center-warp .kcap .kcaptitle h2{
+    font-size:32px;
+}
+.center-warp .kcap .classmenu{
+    height:60px;
+    width:1000px;
+    float: right;
+    margin-top:-25px;
+
+}
+.center-warp .kcap .classmenu ul{
+    height:50px;
+    width:400px;
+    list-style: none;
+    padding: 0;
+    margin:0px;
+    float: right;
+    /* margin-right:50px; */
+    /* margin-bottom: 25px; */
+}
+.center-warp .kcap .classmenu ul li{
+    float: left;
+    width:100px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    font-family: SimHei;
+    color:rgb(147, 147, 147);
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.center-warp .kcap .classmenu ul li:hover{
+    color:rgb(51, 51, 51);
+}
+.center-warp .kcap .classmenu ul li.current{
+    border-bottom: 3px solid rgb(37, 37, 37);
+    font-weight: 600;
+    cursor:pointer;
+    color:rgb(51, 51, 51);
+}
+.center-warp .kcap .kcaptext{
+    width: 1000px;
+    height:520px;
+    /* border: 1px solid; */
+    float: left;
+    transition: height .4s ease;
+}
+.center-warp .kcap .kcaptext ul{
+    list-style: none;
+    padding:0;
+    margin-left:-20px;
+
+}
+.center-warp .kcap .kcaptext ul li{
+    height:100px;
+    width: 1000px;
+    padding:15px 5px;  
+    margin-left:10px; 
+    transition: all .4s ease;
+    border-radius: 5px;
+}
+.center-warp .kcap .kcaptext ul li:hover{
+    box-shadow: 0 2px 10px 0 rgba(117, 117, 117, 0.438);
+}
+.center-warp .kcap .kcaptext ul li .classlable .lable1{
+    width:50px;
+    height:20px;
+    font-size:12px;
+    text-align: center;
+    padding-top:3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:	#97CBFF ;
+    color:white;
+    float: left;
+    margin-right: 20px;
+}
+.center-warp .kcap .kcaptext ul li .classlable .lable2{
+    width:50px;
+    height:20px;
+    font-size:12px;
+    text-align: center;
+    padding-top:3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:#005757 ;
+    color:white;
+    float: left;
+    margin-right: 20px;
+}
+.center-warp .kcap .kcaptext ul li .classlable .lable3{
+    width:90px;
+    height:20px;
+    font-size:12px;
+    text-align: center;
+    padding-top:3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:#9999CC ;
+    color:white;
+    float: left;
+}
+.center-warp .kcap .kcaptext ul li .classtext{
+    height: 100px;
+    width:860px;
+    margin-left:30px;
+    float: left;
+}
+.center-warp .kcap .kcaptext ul li .classlable{
+    width:250px;
+    height:30px;
+    /* background-color: aqua; */
+    padding:5px;
+    padding-top: 10px;
+    float: left;
+}
+.center-warp .kcap .kcaptext ul li img{
+    float: left;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.center-warp .kcap .kcaptext ul li dl{
+    width:870px;
+    height:70px;
+
+    /* padding-top: 10px; */
+    float: left;
+    margin:0;
+}
+.center-warp .kcap .kcaptext ul li dl dt{
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 550;
+    font-family: "Microsoft YaHei";
+}
+.center-warp .kcap .kcaptext ul li dl dd{
+    font-size: 12px;
+    line-height: 18px;
+    margin:0;
+    font-family: "Microsoft YaHei";
+}
+.baidubottom{
+    width:100%;
+    height:200px;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    float: left;
+}
+.baidubottom .bottomcenter{
+    width:1000px;
+    height:200px;
+    /* border:1px solid black; */
+    margin:0 auto;
+}
+.baidubottom .bottomleft{
+    width:50%;
+    height:200px;
+    position: relative;   
+    float: left;
+}
+.baidubottom .bottomleft ul{
+    list-style: none;
+    width:150px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-20px;
+}
+.baidubottom .bottomleft ul li{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    width:40px;
+    height:40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    float: left;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+}
+.baidubottom .bottomleft ul li:last-child{
+    margin: 0;
+}
+.baidubottom .bottomright{
+    float: left;
+    width: 50%;
+    height: 200px;
+    /* border: 1px solid black; */
+    /* box-sizing: border-box; */
+}
+.baidubottom .bottomright .right1{
+    width:120px;
+    height:150px;
+    /* border: 1px solid black; */
+    float: right;
+    margin-left: 45px;
+    text-align: left;
+    margin-top:30px;
+}
+.baidubottom .bottomright .right1:last-child{
+    margin-left:0px;
+}
+
+.baidubottom .bottomright .right1 .right1title{
+    font-size:18px;
+    margin-bottom: 15px;
+    color: rgb(61, 60, 60);
+}
+.baidubottom .bottomright .right1 .right1text{
+    font-size:16px;
+}
+.baidubottom .bottomright .right1 .right1text ul{
+    list-style: none;
+    margin:0px;
+    padding:0;
+    /* border: 1px solid black; */
+}
+.baidubottom .bottomright .right1 .right1text ul li{
+    width:120px;
+    margin-top:6px;
+    font-size: 12px;
+    margin-left:0px;
+    padding: 0;
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+}
+.baidubottom .bottomright .right1 .right1text ul li:hover{
+    color: rgb(35, 35, 35);
+    font-weight: bold;
+}
