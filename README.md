@@ -1,5 +1,5 @@
 # 百度训练营项目--报名首页
-线上演示地址：http://shanshan-ding.gitee.io/baidu_first/Untitled-1.html
+线上演示地址：https://ding-shanshan.github.io/baidu_first/Untitled-1.html
 
 通过使用HTML、CSS、JavaScript等技术，实现如设计稿中的示例，实现一个HTML页面
 
